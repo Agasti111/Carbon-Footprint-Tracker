@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Carbon Tracker</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <nav>
+    <h1>Carbon Tracker</h1>
+  </nav>
+
+  
+  <section class="hero">
+    <div class="city-slide-container" id="citySlideContainer">
+      
+      <div class="city-box" style="background-image: url('delhi.jpg');">
+        <h3>Delhi</h3>
+        <div class="city-info">
+          AQI: 250 (Poor) <br>
+          Humidity: 60% <br>
+          Temperature: 25°C
+        </div>
+      </div>
+      
+      <div class="city-box" style="background-image: url('mumbai.jpeg');">
+        <h3>Mumbai</h3>
+        <div class="city-info">
+          AQI: 80 (Good) <br>
+          Humidity: 70% <br>
+          Temperature: 28°C
+        </div>
+      </div>
+      
+      <div class="city-box" style="background-image: url('bangalore.jpeg');">
+        <h3>Bengaluru</h3>
+        <div class="city-info">
+          AQI: 90 (Moderate) <br>
+          Humidity: 65% <br>
+          Temperature: 22°C
+        </div>
+      </div>
+      
+      <div class="city-box" style="background-image: url('kolkata.jpg');">
+        <h3>Kolkata</h3>
+        <div class="city-info">
+          AQI: 150 (Unhealthy) <br>
+          Humidity: 75% <br>
+          Temperature: 27°C
+        </div>
+      </div>
+      
+      <div class="city-box" style="background-image: url('chennai.jpeg');">
+        <h3>Chennai</h3>
+        <div class="city-info">
+          AQI: 100 (Moderate) <br>
+          Humidity: 80% <br>
+          Temperature: 30°C
+        </div>
+      </div>
+      <div class="city-box" style="background-image: url('pune.jpg');">
+        <h3>Pune</h3>
+        <div class="city-info">
+          AQI: 129 (Poor Level) <br>
+          Humidity: 80% <br>
+          Temperature: 23°C
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="prev-button nav-button" onclick="moveSlide(-1)">&#10094;</div>
+    <div class="next-button nav-button" onclick="moveSlide(1)">&#10095;</div>
+  </section>
+
+  
+  <div class="container">
+    <h1>Welcome to the Carbon Tracker</h1>
+    <p>Discover the air quality index, temperature, and humidity of major metropolitan cities.</p>
+    <p>Track your vehicle's carbon footprint to make informed environmental decisions.</p>
+  </div>
+
+  
+  <button class="calculate-btn">
+    <a href="first.html"> Calculate </a>
+  </button>
+ 
+  
+  
+  
+  <footer>
+    <p>&copy; 2025 Carbon Tracker | Designed for a sustainable future.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

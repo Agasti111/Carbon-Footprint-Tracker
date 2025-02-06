@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carbon Footprint Tracker</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> 
+
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+  
+  <nav>
+    <h1>Carbon Tracker</h1>
+  </nav>
+
+  
+  <section class="hero">
+    <h2>Carbon Footprint Tracker</h2>
+    <p>Calculate and visualize your vehicle's carbon footprint.</p>
+  </section>
+
+  
+  <div class="split-screen">
+    
+    <div class="box">
+      <h3>Calculate Carbon Footprint</h3>
+      <p>Select your vehicle type and distance:</p>
+      <select id="vehicleType">
+        <option value="petrol">Petrol Car</option>
+        <option value="diesel">Diesel Car</option>
+        <option value="electric">Electric Car</option>
+      </select>
+      <input type="number" id="distance" placeholder="Distance in km" />
+      <button onclick="calculateFootprint()">Calculate</button>
+      <div class="result" id="result"></div>
+    </div>
+
+    
+    <div class="box">
+      <canvas id="carbonGraph"></canvas>
+    </div>
+  </div>
+
+  
+  <footer>
+    <p>&copy; 2025 Carbon Tracker | Designed for a sustainable future.</p>
+  </footer>
+
+  <script src="script2.js"></script>
+</body>
+</html>
